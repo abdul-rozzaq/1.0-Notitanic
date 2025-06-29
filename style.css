@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "NEXT ART";
+    src: url('./fonts/NEXT ART_Thin.otf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url('./fonts/NEXT ART_Light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url('./fonts/NEXT ART_Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url('./fonts/NEXT ART_SemiBold.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url('./fonts/NEXT ART_Bold.otf');
+    font-weight: 700;
+}
+
+* {
+    font-family: "NEXT ART", Arial, sans-serif;
+
+}
+
+.c-container {
+    width: 1200px;
+}
+
+
+.circle-figure {
+    width: 570px;
+    height: 570px;
+    border: 65px solid #00C4F0;
+    background-color: transparent;
+    border-radius: 100%;
+    box-shadow: 0 0 152px 0 #00C4F06B;
+}
+
+
+.contact-me {
+    transition: .1s ease-in-out;
+}
+
+.contact-me:hover {
+    box-shadow: 0 2px 13px 0px #E2A200;
+}
+
+
+.navigation-buttons>li {
+    cursor: pointer;
+    position: relative;
+}
+
+.navigation-buttons>li::after {
+    content: '';
+    height: 2px;
+    background-color: #E2A001;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: .3s ease-in-out;
+}
+
+.navigation-buttons>li:hover::after {
+    width: 100%;
+}
+
+.c-card {
+    width: 270px;
+    height: 270px;
+    background-color: #2A2A2A;
+    box-shadow: 0 4px 6px 0 #00000078;
+    border-radius: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+    color: white;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.c-card .img-wrapper {
+    height: 75px;
+    width: auto;
+    margin-bottom: 45px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
